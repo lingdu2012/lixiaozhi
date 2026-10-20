@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://tnc5amks1qbp" path="res://scene/player.tscn" id="1_5kiuu"]
 [ext_resource type="Texture2D" uid="uid://cdkrs6uxo5sjn" path="res://assets/bg.png" id="1_dbls1"]
 [ext_resource type="Script" uid="uid://be25xndpch32t" path="res://scene/player.gd" id="3_33cqm"]
+[ext_resource type="PackedScene" uid="uid://cv8x6m6par54v" path="res://scene/Boss.tscn" id="4_xwcet"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ground"]
 size = Vector2(1600, 120)
@@ -19,6 +20,10 @@ texture = ExtResource("1_dbls1")
 position = Vector2(-589, 224)
 scale = Vector2(0.2, 0.2)
 script = ExtResource("3_33cqm")
+
+[node name="Boss" parent="." unique_id=726726238 instance=ExtResource("4_xwcet")]
+position = Vector2(413, 240)
+scale = Vector2(0.3, 0.3)
 
 [node name="Ground" type="StaticBody2D" parent="." unique_id=209480824]
 position = Vector2(0, 356)
